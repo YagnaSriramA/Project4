@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    margin: 0;
+}
+
+.nav-bar{
+    height:100px;
+    background-color:rgb(255, 255, 255);
+    filter: drop-shadow(rgb(0,0,0) 0px -5px 10px);
+    border:none;
+}
+
+.logo{
+    width:170px;
+    margin:20px 0px 0px 20px;
+}
+
+.only-grid{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid{
+    max-width: 80%;
+    margin-top:80px;
+    margin-bottom:50px;
+}
+
+.only-text{
+    margin-left:40px;
+}
+
+.only-text-header{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.only-text-para{
+    font-size:22px;
+    max-width: 40%;
+}
+
+.card-section{
+    margin-left:40px;
+}
+
+.image-holder{
+    width:265px;
+    height:350px;
+    background-image: url("images/katie-zaferes.png");
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    border-radius: 10px;
+    padding:10px;
+}
+
+.image-holder > label{
+    
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding:3px;
+}
+
+.starline-contents{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
