@@ -1,28 +1,25 @@
 import React from "react";
 import '../style.css'
 import star from '../images/star.png'
-import swimmer from '../images/katie-zaferes.png'
 
-function Card()
+function Card(props)
 {
     return(
         <div className="card-section">
-            <div className="image-holder">
-                <label>SOLD OUT</label>
-            </div>
-            <div>
+            
+                <img src={`${process.env.PUBLIC_URL}/images/${props.img}`} alt="athlete"></img>
                 <div className="starline-contents">
                     <img src={star} alt="star" className="star"></img>
-                    <p className="rating">5.0</p>
-                    <p className="rating-rest">(6) USA</p>
+                    <p className="rating">{props.rating}</p>
+                    <p className="rating-rest">({props.reviewCount}) {props.country}</p>
                 </div>
                 <div>
-                    <p>Life lessons with Katie Safares</p>
+                    <p>{props.title}</p>
                 </div>
                 <div>
-                    <p><b>From $136</b> / person</p>
+                    <p><b>From ${props.price}</b> / person</p>
                 </div>
-            </div>
+            
         </div>
     )
 }

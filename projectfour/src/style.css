@@ -50,7 +50,14 @@ body {
     margin-left:40px;
 }
 
-.image-holder{
+.card-section > img{
+    border-radius: 10px;
+    max-width: 350px;
+    max-height:300px;
+    
+}
+
+/* .image-holder{
     width:265px;
     height:350px;
     background-image: url("images/katie-zaferes.png");
@@ -65,7 +72,7 @@ body {
     background-color: aliceblue;
     border-radius: 5px;
     padding:3px;
-}
+} */
 
 .starline-contents{
     display:flex;
@@ -74,4 +81,16 @@ body {
     align-items: center;
 }
 
+.star{
+    margin-right:10px;
+}
+
+.starline-contents > p{
+    margin-right:10px;
+}
+
+
+.cards-row{
+    display:flex;
+}
 
