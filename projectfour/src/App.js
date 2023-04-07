@@ -10,12 +10,8 @@ function App()
     const deets = data.map(pig =>{
         return (
             <Card 
-            img={pig.coverImg}
-            rating={pig.stats.rating} 
-            reviewCount={pig.stats.reviewCount} 
-            country={pig.location} 
-            title={pig.title} 
-            price={pig.price} 
+            key={pig.id}
+            {...pig}
             />
         )
         
